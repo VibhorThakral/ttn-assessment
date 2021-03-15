@@ -8,6 +8,7 @@ import {
   medkiticon,
 } from '../assets/categoryIcons/index';
 import MedicineCard from '../components/MedicineCard';
+import LongBannerView from '../components/LongBannerView';
 
 const medicineCategoriesData = [
   {
@@ -35,7 +36,10 @@ class HomeLongBannerSection extends Component {
         <Text style={styles.medicineCategoryHeadingText}>
           Medicine Categories
         </Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        <ScrollView
+          horizontal
+          contentContainerStyle={styles.scrollContainer}
+          showsHorizontalScrollIndicator={false}>
           <View style={styles.categoriesContainer}>
             {medicineCategoriesData.map((medCard, index) => {
               return (
@@ -48,6 +52,7 @@ class HomeLongBannerSection extends Component {
             })}
           </View>
         </ScrollView>
+        <LongBannerView />
       </View>
     );
   }
@@ -64,7 +69,9 @@ const styles = StyleSheet.create({
   categoriesContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 10,
+  },
+  scrollContainer: {
+    marginBottom: 20,
   },
 });
 
