@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
 import brandLogo from '../assets/zoylo_logo.png';
 import {markericon, carticon} from '../assets/icons/index';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 
 class HomeTopBar extends Component {
   render() {
@@ -11,13 +12,20 @@ class HomeTopBar extends Component {
           <Image source={brandLogo} />
         </View>
         <View style={styles.topBarRight}>
-          <Image style={styles.image} source={markericon} />
-          <View style={styles.shoppingCart}>
-            <View style={styles.cartcount}>
-              <Text>0</Text>
+          <TouchableOpacity>
+            <Image style={styles.image} source={markericon} />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <View style={styles.shoppingCart}>
+              <View style={styles.cartcount}>
+                <Text>0</Text>
+              </View>
+              <Image
+                style={[styles.image, styles.cartimage]}
+                source={carticon}
+              />
             </View>
-            <Image style={[styles.image, styles.cartimage]} source={carticon} />
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
     );
