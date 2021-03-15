@@ -4,6 +4,7 @@ import HomeHeaderSection from '../sections/HomeHeaderSection';
 import HomeCategorySection from '../sections/HomeCategorySection';
 import HomeDiagnosticPackageSection from '../sections/HomeDiagnosticPackageSection';
 import {ScrollView} from 'react-native-gesture-handler';
+import HomeLongBannerSection from '../sections/HomeLongBannerSection';
 
 class Home extends Component {
   render() {
@@ -13,6 +14,7 @@ class Home extends Component {
           <HomeHeaderSection />
           <HomeCategorySection />
           <HomeDiagnosticPackageSection />
+          <HomeLongBannerSection />
         </ScrollView>
       </SafeAreaView>
     );
