@@ -1,13 +1,18 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, Platform} from 'react-native';
+import {
+  Text,
+  Image,
+  StyleSheet,
+  Platform,
+  TouchableOpacity,
+} from 'react-native';
 
 const MajorServicesCategories = ({keyValue, imageSource, imageTitle}) => {
-  // console.log(key, imageSource, imageTitle);
   return (
-    <View style={styles.card} key={keyValue}>
+    <TouchableOpacity style={styles.card} key={keyValue}>
       <Image style={styles.image} source={imageSource} />
       <Text style={styles.text}>{imageTitle}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
