@@ -21,3 +21,6 @@ Points to consider
 * Bottom Tab navigation should show alert on every icon clicked
 * No commits are going to be considered after 7:00 PM 15th March 2021
 * Good Luck!
+
+## Output:
+<img width="300px" src="./src/assets/output.gif"></img>
