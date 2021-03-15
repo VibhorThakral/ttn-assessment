@@ -27,10 +27,13 @@ class HomeTopBar extends Component {
 const styles = StyleSheet.create({
   HomeTopBarContainer: {
     paddingHorizontal: 20,
-    paddingVertical: 10,
+    paddingTop: 10,
+    paddingBottom: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: 'rgba(200,200,200,0.75)',
   },
   image: {
     height: 35,

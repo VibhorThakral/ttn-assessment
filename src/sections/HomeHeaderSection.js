@@ -6,7 +6,7 @@ import HomeBannerSection from '../components/HomeBannerSection.js';
 class HomeHeaderSection extends Component {
   render() {
     return (
-      <View style={styles.HomeHeaderSectionContainer}>
+      <View style={styles.container}>
         <HomeTopBar />
         <HomeBannerSection />
       </View>
@@ -14,6 +14,10 @@ class HomeHeaderSection extends Component {
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+  },
+});
 
 export default HomeHeaderSection;
