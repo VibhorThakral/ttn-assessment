@@ -26,9 +26,7 @@ class HomeTopBar extends Component {
 
 const styles = StyleSheet.create({
   HomeTopBarContainer: {
-    paddingHorizontal: 20,
-    paddingTop: 10,
-    paddingBottom: 10,
+    padding: 10,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
