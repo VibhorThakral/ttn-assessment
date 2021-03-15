@@ -36,7 +36,7 @@ class HomeBannerSection extends Component {
           timer={5000}
           local
           component={<Preview />}
-          onPress={item => alert(JSON.stringify(item))}
+          onPress={item => null}
           indicatorActiveWidth={20}
           contentContainerStyle={styles.FlatListContainer}
           indicatorContainerStyle={styles.IndicatorContainer}
